@@ -28,6 +28,8 @@ function create(req, res) {
 
   function show (req, res){
     console.log("showing specific flights");
+    console.log("flight id", Flight.findById);
+    console.log("req params id", req.params.id);
     Flight.findById(req.params.id, function(error, flight){
       res.render('flights/show',{
         flight,
