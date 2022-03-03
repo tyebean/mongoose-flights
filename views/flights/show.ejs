@@ -10,6 +10,12 @@
   <title>Flight Details</title>
 </head>
 <body>
+  <div>
+  <p>view properties of each indiv flight including tickets</p>
+  <p>add ticket. seat and price</p>
+  <p>view list of tickets</p>
+  </div>
+  
   <h1>Flight Details</h1>
   <br>
   <h3>Airline</h3>
@@ -21,15 +27,7 @@
   <h3>Flight No</h3>
   <br>
   <h3>Tickets</h3>
-  <br>
-
   
-  <% if(error) { %>
-    <h2><%= error %></h2>
-  <% } else { %>
-    <h2>Flight #<%= flight.flightNo %></h2>
-    <h3>Airline: <%= flight.airline %></h3>
-  <% } %>
-  <a href="/flights">Go back</a>
+  <br>
 </body>
 </html> 

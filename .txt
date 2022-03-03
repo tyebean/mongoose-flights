@@ -1,0 +1,11 @@
+
+
+for show.ejs:
+<ul>
+    <% tickets.forEach( ticket => { %>
+      <li><%= ticket.seat %></li>
+      <li><%= ticket.price %></li>
+    <% }) %>
+  </ul>
+
+  

@@ -27,6 +27,7 @@ function create(req, res) {
   }
 
   function show (req, res){
+    console.log("SHOW IS WORKING I AM HERE HELLO HELLO HELLO");
     console.log("showing specific flights");
     console.log("flight id", Flight.findById);
     console.log("req params id", req.params.id);
